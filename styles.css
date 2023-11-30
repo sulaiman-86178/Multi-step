@@ -1,0 +1,159 @@
+body{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+background-color: hsl(217, 100%, 97%);
+height: 100vh;
+
+}
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  width: 700px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+.right{
+  width: 40%;
+  height: 500px;
+  background-image: url('bg-sidebar-desktop.svg');
+  padding: 30px;
+}
+.cont{
+  display: flex;
+  gap:6px;
+}
+.first{
+  background-color: inherit;
+}
+.second{
+flex-direction: column;
+
+
+}
+.me{
+position: relative;
+bottom: 20px;
+color: hsl(0, 0%, 100%);
+font-size: 12px;
+}
+.content{
+  color:hsl(229, 24%, 87%);
+  font-weight: inherit;
+  font-size: 10px;
+
+}
+a{
+  text-decoration: none;
+
+}
+
+
+.left{
+width: 60%;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 50px;
+}
+.left-content h4{
+  color:hsl(213, 96%, 18%);
+  font-size: 30px;
+  font-weight: bold;
+}
+.left-content p{
+  font-size: 10px;
+  color: hsl(231, 11%, 63%);
+  font-weight: bold;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  padding: 5px;
+  border-radius: 5px;
+  border-style: inset;
+
+
+}
+label{
+  float: left;
+  text-align:left;
+  font-size: 13px;
+  color: hsl(213, 96%, 18%);
+
+}
+.ne{
+color:white;
+}
+.ye{
+  background-color: hsl(213, 96%, 18%);
+  text-align: right;
+  float: right;
+}
+@media (max-width:600px) {
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    position: relative;
+    bottom: 50px;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .right{
+    background-image: url('bg-sidebar-mobile.svg');
+    /* padding: 30px; */
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    position: relative;
+    bottom: 20px;
+
+  }
+
+  .second{
+
+    display: none;
+  }
+  /* .first{
+   display: inline;
+    /* flex-direction: row; */
+    /* gap:100px; */
+  }
+  .left{
+  width:400px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  left: 60px;
+  bottom: 10px;
+  }
+
+  .ye{
+    background-color: hsl(213, 96%, 18%);
+    text-align: right;
+    float: right;
+    position: relative;
+    top: 100px;
+    left: 80px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}

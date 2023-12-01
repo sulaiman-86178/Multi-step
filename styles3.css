@@ -176,7 +176,7 @@ background-color:hsl(228, 100%, 84%);
 
   .last{
     display: flex;
-      padding: 10px;
+      padding: 20px;
         gap:170px;
         position: relative;
         top: 150px;
